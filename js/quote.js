@@ -309,89 +309,97 @@ var quotes = ["Imagination is more important than knowledge. For knowledge is li
               "To learn language you need two things good ear and good memory.",
               "Hard work can give you anything you want - ",
               "People will forget what you said, people will forget what you did, but people will never forget how you made them feel -",
-       //       "If everybody loses faith on you, blames it on you, If you can still keep your calm, held your head high, you are a djash my son.",
               "Listen to yourself and in that quietude you might hear the voice of God - Maya Angelou",
               "Love: A temporary insanity curable by marriage - Ambrose Bierce",
               "When you doubt your power, you give power to your doubt.",
               "Make time for yourself, you are important.",
               "Be yourself, to free yourself.",
-			  "I think everybody should get rich and famous and do everything they ever dreamed of so they can see that it's not the answer - Jim Carrey",
-			   "Always forgive your enemies; nothing annoys them so much. - Oscar Wilde",
-			   "I have no special talents. I am only passionately curious. - Albert Einstein",
-			   "The fragrance of flowers spreads only in the direction of the wind. But the goodness of a person spreads in all directions. - Chanakya",
-			   "Blessed are they who see beautiful things in humble places where other people see nothing ~ Camille Pissarro",
-			   "Character is like a tree and reputation its shadow. The shadow is what we think it is and the tree is the real thing. - Abraham Lincoln",
-"When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the one which has opened for us.",
+              "I think everybody should get rich and famous and do everything they ever dreamed of so they can see that it's not the answer - Jim Carrey",
+              "Always forgive your enemies; nothing annoys them so much. - Oscar Wilde",
+              "I have no special talents. I am only passionately curious. - Albert Einstein",
+              "The fragrance of flowers spreads only in the direction of the wind. But the goodness of a person spreads in all directions. - Chanakya",
+              "Blessed are they who see beautiful things in humble places where other people see nothing ~ Camille Pissarro",
+              "Character is like a tree and reputation its shadow. The shadow is what we think it is and the tree is the real thing. - Abraham Lincoln",
+              "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the one which has opened for us.",
               "A smooth sea never made a skilled sailor.",
               "Unease, anxiety, tension, stress, worry - all forms of fear - are caused by too much future, and not enough presence - Eckhart Tolle",
               "If you can't explain it to a six year old, you don't understand it yourself. - Albert Einstein",
-              "Logic will get you from A to Z; imagination will get you everywhere. - Alber Einstein",
+              "Logic will get you from A to Z; imagination will get you everywhere. - Alber Einstein","All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you.- Swami Vivekananda",
               ];
 $(document).ready(function(){
+                  
+                  $('*').css({'margin':'20px','padding':'5px'});
+                  
+                  $('h2').css({'background':'#E4DBDB'});
+                  
+                  $('buttonBar').css({'align':'center','background':'#E4DBDB'});
+                  
+                  function setDuration() {
+                  delay =(( Math.round(quotes[index].length / 5) * duration) );
+                  
+                  }
+                  
+                  function incrementIndex(){
+                  index++;
+                  if (index >= quotes.length){
+                  index = 0;
+                  }
+                  setDuration();
+                  }
+                  
+                  function decrementIndex(){
+                  if (index <= 0) {
+                  index = quotes.length;
+                  }
+                  index--;
+                  setDuration();
+                  }
+                  
+                  setInterval(function(){
+                              
+                              if (delay === 0) {
+                              incrementIndex();
+                              $('h2').text( quotes[index]);
+                              var img_index = index % 4;
+                               $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                              $('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
+                              } else {
+                              $('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
+                              delay -= duration;
+                              }
+                              
+                              }, duration);
+                  
+                  // 'Previous' button click
+                  $('#prevQuote').click(function(){
+                                        decrementIndex();
+                                        $('h2').text( quotes[index]);
+                                        var img_index = index % 4;
+                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        });
+                  
+                  $('#1stQuote').click(function(){
+                                       index = -1;
+                                       incrementIndex();
+                                       $('h2').text( quotes[index]);
+                                       var img_index = index % 4;
+                                       $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                       });
+                  
+                  $('#nextQuote').click(function(){
+                                        incrementIndex();
+                                        $('h2').text( quotes[index]);
+                                        var img_index = index % 4;
+                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        });
+                  
+                  $('#lastQuote').click(function(){
+                                        index = quotes.length;
+                                        decrementIndex();
+                                        $('h2').text( quotes[index]);
+                                        var img_index = index % 4;
+                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        });
+                  });
 
-	$('*').css({'margin':'20px','padding':'5px'});
-	
-	$('h2').css({'background':'#E4DBDB'});
-	
-	$('buttonBar').css({'align':'center','background':'#E4DBDB'});
-	
-	function setDuration() {
-		delay =(( Math.round(quotes[index].length / 5) * duration) );
-		
-	}
-	
-	function incrementIndex(){
-		index++;
-		if (index >= quotes.length){
-			index = 0;
-		} 
-		setDuration();
-	}
-	
-	function decrementIndex(){
-		if (index <= 0) {
-			index = quotes.length;
-		}
-		index--;
-		setDuration();
-	}
-	
-	setInterval(function(){ 
-		
-		if (delay === 0) {
-			incrementIndex();
-			$('h2').text( quotes[index]);
-            
-			$('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
-		} else {
-			$('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
-			delay -= duration;
-		}
-		
-	}, duration);
-	
-	// 'Previous' button click
-	$('#prevQuote').click(function(){
-		decrementIndex();
-		$('h2').text( quotes[index]);
-	});
-	
-	$('#1stQuote').click(function(){
-		index = -1;
-		incrementIndex();
-		$('h2').text( quotes[index]);
-	});
-	
-	$('#nextQuote').click(function(){
-		incrementIndex();
-		$('h2').text( quotes[index]);
-	});
-	
-	$('#lastQuote').click(function(){
-		index = quotes.length;
-		decrementIndex();
-		$('h2').text( quotes[index]);
-	});
-});
-  
-			  
+
