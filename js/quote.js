@@ -1,6 +1,7 @@
 var duration = 1000;
 var index = -1;
 var delay = 0;
+var no_of_images =5;
 var quotes = ["Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand. - Albert Einstein","Every body prays in time of need, Prosperity kills prayer, Pray in prosperity - Kabir","Our life is a theatre and we are all actors in it pretending to be some one ,we are not really - St John","No blame, No complain, No excuse","Some will, Some will not, So what next","No pain, no gain","Age is just a number.","He who is of calm and happy nature will hardly feel the pressure of age, but to him who is of an opposite disposition youth and age are equally a burden. - Plato","A merry heart doeth good like a medicine, but a broken spirit drieth the bones. - Proverbs 17:22 Kings James Version.","If you concentrate on what you do not have you will never ever have enough","No Safety - Know Pain, Know Safety - No Pain","Communication, Urge, Leadership, Teamwork, Understanding, Recognition, Empowerment - CULTURE","If you can't do great things, do small things in a great way - Napoleon Hill","Comparing your progress to someone else is rarely helpful - Becker","We are not the things we own ","Excess adds stress and anxiety to our lives","The world has enough for everyone's need, but not enough for everyone's greed - Gandhi","Excess causes us to lose sight of the things we already have","I will tell you what I learned myself. For me a long, five or six-mile walk helps. And one must go alone and every day - Brenda Ueland","It is impossible to find peace, gratitude, and contentment while holding on to envy of those who have more. Unfortunately, we do it all the time. ","Admiration is a healthy emotion","What is the purpose of this life? Where can I have fulfillment? And what does it mean to live an abundant life? These are difficult questions with difficult answers. But surely, 'owning as much stuff as possible' is not the answer to any of them. There are greater pursuits available to us than excess. But they can be difficult to discover when all our energies are being directed at the wrong things.","Admire success. But do not praise excess. Our society is longing for people who can tell the difference.","Even in a hi-tech world you eyes are still your greatest asset","Safety comes in a can, I can, You can, We can be safe",
               "The best remedy for those who are afraid, lonely or unhappy is to go outside, somewhere they can be quiet, alone with the heavens, nature and God. Because only then does one feel that all is as it should be and that God wishes to see people happy, amidst the simple beauty of nature - Anne Frank",
               "One can be instructed in society, one is inspired only in solitude - Johann Wolfgang Von Gothe",
@@ -339,6 +340,12 @@ $(document).ready(function(){
                   
                   }
                   
+                  function setMedia(){
+                    $('h2').text( quotes[index]);
+                    var img_index = index % no_of_images;
+                    $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                  }
+                  
                   function incrementIndex(){
                   index++;
                   if (index >= quotes.length){
@@ -359,9 +366,7 @@ $(document).ready(function(){
                               
                               if (delay === 0) {
                               incrementIndex();
-                              $('h2').text( quotes[index]);
-                              var img_index = index % 4;
-                               $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                              setMedia();
                               $('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
                               } else {
                               $('#delay').text("Quotes will be updated in " +(delay / 1000) + " seconds");
@@ -373,32 +378,25 @@ $(document).ready(function(){
                   // 'Previous' button click
                   $('#prevQuote').click(function(){
                                         decrementIndex();
-                                        $('h2').text( quotes[index]);
-                                        var img_index = index % 4;
-                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        setMedia();
                                         });
                   
                   $('#1stQuote').click(function(){
                                        index = -1;
                                        incrementIndex();
-                                       $('h2').text( quotes[index]);
-                                       var img_index = index % 4;
-                                       $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                       setMedia();
                                        });
                   
                   $('#nextQuote').click(function(){
                                         incrementIndex();
-                                        $('h2').text( quotes[index]);
-                                        var img_index = index % 4;
-                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        setMedia();
                                         });
                   
                   $('#lastQuote').click(function(){
                                         index = quotes.length;
                                         decrementIndex();
-                                        $('h2').text( quotes[index]);
-                                        var img_index = index % 4;
-                                        $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                                        setMedia();
+    
                                         });
                   });
 
