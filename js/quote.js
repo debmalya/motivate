@@ -398,6 +398,27 @@ $(document).ready(function(){
                                         setMedia();
     
                                         });
+                  
+                  $('#speak').click(function(){
+                                if (window.hasOwnProperty('webkitSpeechRecognition')) {
+                                    var u = new SpeechSynthesisUtterance();
+                                    u.text = quotes[index];
+                                    u.lang = 'en-US';
+                                    
+                                    u.onend = function () {
+                                        if (callback) {
+                                            callback();
+                                        }
+                                    };
+                                    
+                                    u.onerror = function (e) {
+                                    
+                                    };
+                                    
+                                    speechSynthesis.speak(u);
+                                }
+                                    
                   });
+    });
 
 
