@@ -406,9 +406,6 @@ $(document).ready(function(){
                                     u.lang = 'en-US';
                                     
                                     u.onend = function () {
-                                        if (callback) {
-                                            callback();
-                                        }
                                     };
                                     
                                     u.onerror = function (e) {
