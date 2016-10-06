@@ -335,6 +335,13 @@ $(document).ready(function(){
                   
                   $('buttonBar').css({'align':'center','background':'#E4DBDB'});
                   
+                  // if browser is not chrome, then remove 'speak' button.
+                  if (window.hasOwnProperty('webkitSpeechRecognition')) {
+                  
+                  } else {
+                    $( "#speak" ).remove();
+                  }
+                  
                   function setDuration() {
                   delay =(( Math.round(quotes[index].length / 5) * duration) );
                   
