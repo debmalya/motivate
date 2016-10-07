@@ -325,7 +325,7 @@ var quotes = ["I have not failed. I've just found 10,000 ways that won't work. -
               "A smooth sea never made a skilled sailor.",
               "Unease, anxiety, tension, stress, worry - all forms of fear - are caused by too much future, and not enough presence - Eckhart Tolle",
               "If you can't explain it to a six year old, you don't understand it yourself. - Albert Einstein",
-              "Logic will get you from A to Z; imagination will get you everywhere. - Alber Einstein","Opportunity is missed by most people because it is dressed in overalls and looks like work.- Thomas Alva Edison","All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you.- Swami Vivekananda",
+              "Logic will get you from A to Z; imagination will get you everywhere. - Alber Einstein","Opportunity is missed by most people because it is dressed in overalls and looks like work.- Thomas Alva Edison","A physician once said 'The best medicine for humans is love.' Someone asked ,'what if doesn't work?' He smiled and said 'Increase the dose'.","All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you.- Swami Vivekananda",
               ];
 $(document).ready(function(){
                   
