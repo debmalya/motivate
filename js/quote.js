@@ -327,8 +327,9 @@ var quotes = ["I have not failed. I've just found 10,000 ways that won't work. -
               "If you can't explain it to a six year old, you don't understand it yourself.  Albert Einstein",
               "Logic will get you from A to Z; imagination will get you everywhere.  Albert Einstein","Opportunity is missed by most people because it is dressed in overalls and looks like work. Thomas Alva Edison","A physician once said 'The best medicine for humans is love.' Someone asked ,'what if doesn't work?' He smiled and said 'Increase the dose'.","All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you. Swami Vivekananda",
               ];
-//var index = -1;
+
 var index = Math.floor(Math.random()*quotes.length);
+var voice_on = 0;
 $(document).ready(function(){
                   
                   $('*').css({'margin':'20px','padding':'5px'});
@@ -344,6 +345,22 @@ $(document).ready(function(){
                     $( "#speak" ).remove();
                   }
                   
+                  function speak(){
+                      if (voice_on === 1 &&  window.hasOwnProperty('webkitSpeechRecognition')) {
+                      var u = new SpeechSynthesisUtterance();
+                      u.text = quotes[index];
+                      u.lang = 'en-US';
+                      
+                      u.onend = function () {
+                      };
+                      
+                      u.onerror = function (e) {
+                      
+                      };
+                      
+                      speechSynthesis.speak(u);
+                      }
+                  }
                   function setDuration() {
                   delay =(( Math.round(quotes[index].length / 5) * duration) );
                   
@@ -353,6 +370,7 @@ $(document).ready(function(){
                     $('h2').text( quotes[index]);
                     var img_index = index % no_of_images;
                     $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                    speak();
                   }
                   
                   function incrementIndex(){
@@ -409,20 +427,16 @@ $(document).ready(function(){
                                         });
                   
                   $('#speak').click(function(){
-                                if (window.hasOwnProperty('webkitSpeechRecognition')) {
-                                    var u = new SpeechSynthesisUtterance();
-                                    u.text = quotes[index];
-                                    u.lang = 'en-US';
-                                    
-                                    u.onend = function () {
-                                    };
-                                    
-                                    u.onerror = function (e) {
-                                    
-                                    };
-                                    
-                                    speechSynthesis.speak(u);
-                                }
+                                if (voice_on === 0) {
+                                        voice_on = 1;
+                                        ;
+                                        $("#speak").text('Turn voice off');
+                                        speak();
+                                    } else {
+                                        voice_on = 0;
+                                         $("#speak").text('Turn voice on');
+                                    }
+                                
                                     
                   });
     });
