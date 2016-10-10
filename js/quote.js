@@ -1,3 +1,4 @@
+
 var duration = 1000;
 var delay = 0;
 var no_of_images = 6;
@@ -420,34 +421,34 @@ $(document).ready(function(){
                   $('#prevQuote').click(function(){
                                         decrementIndex();
                                         setMedia();
-                                        });
+                  });
                   
                   $('#1stQuote').click(function(){
                                        index = -1;
                                        incrementIndex();
                                        setMedia();
-                                       });
+                  });
                   
                   $('#nextQuote').click(function(){
                                         incrementIndex();
                                         setMedia();
-                                        });
+                  });
                   
                   $('#lastQuote').click(function(){
                                         index = quotes.length;
                                         decrementIndex();
                                         setMedia();
                                         
-                                        });
+                    });
                   
                   $('#speak').click(function(){
                                     if (voice_on === 0) {
-                                    voice_on = 1;
-                                    $("#speak").text('Turn voice off');
-                                    speak();
-                                    } else {
-                                    voice_on = 0;
-                                    $("#speak").text('Turn voice on');
+                                        voice_on = 1;
+                                        $("#speak").text('Turn voice off');
+                                        speak();
+                                        } else {
+                                        voice_on = 0;
+                                        $("#speak").text('Turn voice on');
                                     }
                                     
                                     
