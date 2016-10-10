@@ -1,3 +1,4 @@
+
 var duration = 1000;
 var delay = 0;
 var no_of_images = 6;
@@ -345,10 +346,11 @@ $(document).ready(function(){
                   if (window.hasOwnProperty('webkitSpeechRecognition')) {
                   
                   } else {
-                    $( "#speak" ).remove();
+                  $( "#speak" ).remove();
                   }
                   
                   function speak(){
+<<<<<<< HEAD
                       if (voice_on === 1 &&  window.hasOwnProperty('webkitSpeechRecognition')) {
                       var u = new SpeechSynthesisUtterance();
                       u.text = quotes[index];
@@ -374,6 +376,33 @@ $(document).ready(function(){
                       
                       speechSynthesis.speak(u);
                       }
+=======
+                  if (voice_on === 1 &&  window.hasOwnProperty('webkitSpeechRecognition')) {
+                  var u = new SpeechSynthesisUtterance();
+                  u.text = quotes[index];
+                  u.lang = lang;
+                  
+                  if (lang === "en-US"){
+                  lang = "en-GB";
+                  if (index % 2 === 1){
+                  u.name = "Google UK English Female";
+                  } else {
+                  u.name = "Google UK English Male";
+                  }
+                  } else {
+                  lang = "en-US";
+                  }
+                  
+                  u.onend = function () {
+                  };
+                  
+                  u.onerror = function (e) {
+                  
+                  };
+                  
+                  speechSynthesis.speak(u);
+                  }
+>>>>>>> ae851db31def85de72c931e22e95ddb430f318dd
                   }
                   function setDuration() {
                   delay =(( Math.round(quotes[index].length / 5) * duration) );
@@ -381,10 +410,10 @@ $(document).ready(function(){
                   }
                   
                   function setMedia(){
-                    $('h2').text( quotes[index]);
-                    var img_index = index % no_of_images;
-                    $('#quote_image').attr('src','img/'+img_index+'.jpg');
-                    speak();
+                  $('h2').text( quotes[index]);
+                  var img_index = index % no_of_images;
+                  $('#quote_image').attr('src','img/'+img_index+'.jpg');
+                  speak();
                   }
                   
                   function incrementIndex(){
@@ -420,38 +449,37 @@ $(document).ready(function(){
                   $('#prevQuote').click(function(){
                                         decrementIndex();
                                         setMedia();
-                                        });
+                  });
                   
                   $('#1stQuote').click(function(){
                                        index = -1;
                                        incrementIndex();
                                        setMedia();
-                                       });
+                  });
                   
                   $('#nextQuote').click(function(){
                                         incrementIndex();
                                         setMedia();
-                                        });
+                  });
                   
                   $('#lastQuote').click(function(){
                                         index = quotes.length;
                                         decrementIndex();
                                         setMedia();
-    
-                                        });
+                                        
+                    });
                   
                   $('#speak').click(function(){
-                                if (voice_on === 0) {
+                                    if (voice_on === 0) {
                                         voice_on = 1;
                                         $("#speak").text('Turn voice off');
                                         speak();
-                                    } else {
+                                        } else {
                                         voice_on = 0;
-                                         $("#speak").text('Turn voice on');
+                                        $("#speak").text('Turn voice on');
                                     }
-                                
                                     
+                                    
+                                    });
                   });
-    });
-
 
