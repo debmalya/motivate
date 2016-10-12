@@ -357,9 +357,11 @@ $(document).ready(function(){
                   if (lang === "en-US"){
                   lang = "en-GB";
                   if (index % 2 === 1){
-                  u.name = "Google UK English Female";
+                    u.name = "Google UK English Female";
+                  console.log('Female UK voice');
                   } else {
-                  u.name = "Google UK English Male";
+                    u.name = "Google UK English Male";
+                  console.log('Male UK voice');
                   }
                   } else {
                   lang = "en-US";
