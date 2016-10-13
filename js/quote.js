@@ -3,7 +3,7 @@ var delay = 0;
 var no_of_images = 12;
 var lang="en-US";
 
-var quotes = ["Judge of a man by his questions rather than by his answers. - Voltaire",
+var quotes = ["It does not matter how slowly you go as long as you do not stop. Confucius","Judge of a man by his questions rather than by his answers. Voltaire",
               "God gave us the gift of life; it is up to us to give ourselves the gift of living well.  - Voltaire",
               "Appreciation is a wonderful thing: It makes what is excellent in others belong to us as well - Voltaire",
               "Common sense is not so common - Voltaire",
