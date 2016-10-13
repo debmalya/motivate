@@ -3,7 +3,7 @@ var delay = 0;
 var no_of_images = 12;
 var lang="en-US";
 
-var quotes = ["Judge of a man by his questions rather than by his answers. - Voltaire",
+var quotes = ["Most of all the other beautiful things in life come by twos and threes, by dozens and hundreds. Plenty of roses, stars, sunsets, rainbows, brothers and sisters, aunts and cousins, but only one mother in the whole world. Kate Wiggin","Judge of a man by his questions rather than by his answers. - Voltaire",
               "God gave us the gift of life; it is up to us to give ourselves the gift of living well.  - Voltaire",
               "Appreciation is a wonderful thing: It makes what is excellent in others belong to us as well - Voltaire",
               "Common sense is not so common - Voltaire",
