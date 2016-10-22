@@ -3,8 +3,9 @@ var delay = 0;
 var no_of_images = 12;
 var lang="en-US";
 
-var quotes = ["Most of all the other beautiful things in life come by twos and threes, by dozens and hundreds. Plenty of roses, stars, sunsets, rainbows, brothers and sisters, aunts and cousins, but only one mother in the whole world. Kate Wiggin","Judge of a man by his questions rather than by his answers. - Voltaire",
-              "God gave us the gift of life; it is up to us to give ourselves the gift of living well.  - Voltaire",
+var quotes = ["Beleive in yourself, others will believe you.","Most of all the other beautiful things in life come by twos and threes, by dozens and hundreds. Plenty of roses, stars, sunsets, rainbows, brothers and sisters, aunts and cousins, but only one mother in the whole world. Kate Wiggin","Judge of a man by his questions rather than by his answers. - Voltaire",
+"Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso","Take control of your emotions before emotions take control of you...","Mistakes are proof, that you are trying","Reality is a product of our dreams, decisions & actions.","Where words fail, music speaks.  Hans Christian Andersen","Your failure does not define you, your determination does.","Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me. Steve Jobs","What you do today can improve all your tomorrows.  Ralph Marston","It does not matter how slowly you go as long as you do not stop. Confucius","Judge of a man by his questions rather than by his answers. Voltaire",
+"God gave us the gift of life; it is up to us to give ourselves the gift of living well.  - Voltaire",
               "Appreciation is a wonderful thing: It makes what is excellent in others belong to us as well - Voltaire",
               "Common sense is not so common - Voltaire",
               "Tears are the silent language of grief. - Voltaire",
@@ -366,9 +367,11 @@ $(document).ready(function(){
                   if (lang === "en-US"){
                   lang = "en-GB";
                   if (index % 2 === 1){
-                  u.name = "Google UK English Female";
+                    u.name = "Google UK English Female";
+                  console.log('Female UK voice');
                   } else {
-                  u.name = "Google UK English Male";
+                    u.name = "Google UK English Male";
+                  console.log('Male UK voice');
                   }
                   } else {
                   lang = "en-US";
