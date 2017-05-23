@@ -4,7 +4,8 @@ var no_of_images = 12;
 var lang="en-US";
 
 
-var quotes = ["Start where you are. Use what you have. Do what you can. Arthur Ashe",
+var quotes = ["Without great solitude, no serious work is possible. Pablo Picasso",
+              "Start where you are. Use what you have. Do what you can. Arthur Ashe",
 "Beauty is about living your life & being happy with yourself inside & out & not worrying about what people think of you.",
 "If you want to fly, you have to give up the stuff that weighs you down.",
 "Do not let the shadows of your past darken the doorstep of your future. Forgive and forget.",
