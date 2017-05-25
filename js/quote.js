@@ -4,8 +4,7 @@ var no_of_images = 12;
 var lang="en-US";
 
 
-var quotes = ["Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; 
-              but great minds rise above them. Washington Irving",
+var quotes = ["Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; but great minds rise above them. Washington Irving",
               "Without great solitude, no serious work is possible. Pablo Picasso",
               "Start where you are. Use what you have. Do what you can. Arthur Ashe",
 "Beauty is about living your life & being happy with yourself inside & out & not worrying about what people think of you.",
