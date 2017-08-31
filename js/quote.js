@@ -4,7 +4,8 @@ var no_of_images = 12;
 var lang="en-US";
 
 
-var quotes = ["Instead of focusing on being the best, focus on being the best you can be - Maxie McCoy","Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; but great minds rise above them. Washington Irving",
+var quotes = ["A man is relieved and gay when he has put his heart into his work and done his best. Emerson, Ralph Waldo",
+              "Instead of focusing on being the best, focus on being the best you can be - Maxie McCoy","Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; but great minds rise above them. Washington Irving",
               "Without great solitude, no serious work is possible. Pablo Picasso",
               "Start where you are. Use what you have. Do what you can. Arthur Ashe",
 "Beauty is about living your life & being happy with yourself inside & out & not worrying about what people think of you.",
