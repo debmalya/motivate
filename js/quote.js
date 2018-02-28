@@ -4,7 +4,8 @@ var no_of_images = 12;
 var lang="en-US";
 
 
-var quotes = ["Simplicity is the ultimate sophistication. - Leonardo da Vinci","Life is all about the next step","A man is relieved and gay when he has put his heart into his work and done his best. Emerson, Ralph Waldo",
+var quotes = ["Raise your words, not voice. It is rain that grows flowers, not thunder. - Rumi","Simplicity is the ultimate sophistication. - Leonardo da Vinci",
+              "Life is all about the next step","A man is relieved and gay when he has put his heart into his work and done his best. Emerson, Ralph Waldo",
               "Instead of focusing on being the best, focus on being the best you can be - Maxie McCoy","Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; but great minds rise above them. Washington Irving",
               "Without great solitude, no serious work is possible. Pablo Picasso",
               "Start where you are. Use what you have. Do what you can. Arthur Ashe",
