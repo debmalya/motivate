@@ -4,7 +4,9 @@ var no_of_images = 12;
 var lang="en-US";
 
 
-var quotes = ["If the plan doesn't work, change the plan. Not the goal. Learn to adapt to a situation and how to improve your vision from there. Dea Kurti,","Raise your words, not voice. It is rain that grows flowers, not thunder. - Rumi","Simplicity is the ultimate sophistication. - Leonardo da Vinci",
+var quotes = [
+"An inexhaustible good nature is one of the most precious gifts of heaven, spreading itself like oil over the troubled sea of thought, and keeping the mind smooth and equable in the roughest weather. - Washington Irving",
+"If the plan doesn't work, change the plan. Not the goal. Learn to adapt to a situation and how to improve your vision from there. Dea Kurti,","Raise your words, not voice. It is rain that grows flowers, not thunder. - Rumi","Simplicity is the ultimate sophistication. - Leonardo da Vinci",
               "Life is all about the next step","A man is relieved and gay when he has put his heart into his work and done his best. Emerson, Ralph Waldo",
               "Instead of focusing on being the best, focus on being the best you can be - Maxie McCoy","Great minds have purposes; others have wishes. Little minds are tamed and subdued by misfortune; but great minds rise above them. Washington Irving",
               "Without great solitude, no serious work is possible. Pablo Picasso",
