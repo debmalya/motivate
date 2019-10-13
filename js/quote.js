@@ -7,7 +7,7 @@ var lang="en-US";
 var quotes = [
 "A goal stood before Siddhartha, a single goal: to become empty, empty of thirst, empty of wishing, empty of dreams, empty of joy and sorrow. Dead to himself, not to be a self any more, to find tranquility with an emptied heart, to be open to miracles in unselfish thoughts, that was his goal.",
 "Om silently, the word of words, to speak it silently into himself while inhaling, to speak it silently out of himself while exhaling, with all the concentration of his soul, the forehead surrounded by the glow of the clear-thinking spirit. - Siddhartha, by Herman Hesse",
-"Success is the ability to go from one faiure to another with no loss of enthusiam - Winston Charchill",
+"Success is the ability to go from one failure to another with no loss of enthusiasm - Winston Churchill",
 "If you can't explain it simply you don't understand it well enough - Albert Einstein",
 "An inexhaustible good nature is one of the most precious gifts of heaven, spreading itself like oil over the troubled sea of thought, and keeping the mind smooth and equable in the roughest weather. - Washington Irving",
 "If the plan doesn't work, change the plan. Not the goal. Learn to adapt to a situation and how to improve your vision from there. Dea Kurti,","Raise your words, not voice. It is rain that grows flowers, not thunder. - Rumi","Simplicity is the ultimate sophistication. - Leonardo da Vinci",
