@@ -5,6 +5,7 @@ var lang="en-US";
 
 
 var quotes = [
+"The best thing in life are mostly beyond your eyesight. They're most often felt from heart.",
 "A goal stood before Siddhartha, a single goal: to become empty, empty of thirst, empty of wishing, empty of dreams, empty of joy and sorrow. Dead to himself, not to be a self any more, to find tranquility with an emptied heart, to be open to miracles in unselfish thoughts, that was his goal.",
 "Om silently, the word of words, to speak it silently into himself while inhaling, to speak it silently out of himself while exhaling, with all the concentration of his soul, the forehead surrounded by the glow of the clear-thinking spirit. - Siddhartha, by Herman Hesse",
 "Success is the ability to go from one failure to another with no loss of enthusiasm - Winston Churchill",
