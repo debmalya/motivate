@@ -385,6 +385,7 @@ var quotes = [
   "A physician once said 'The best medicine for humans is love.' Someone asked ,'what if doesn't work?' He smiled and said 'Increase the dose'.",
   "Until you value yourself, you won't value your time. Until you value your time, you will not do anything with it. M. Scott Peck", "It's not about ideas. It's about making ideas happen. Scott Belsky",
   "A problem is a chance for you to prove yourself and do your best.",
+  "You are strong when you know your weaknesses. You are beautiful when you appreciate your flaws. You are wise when you learn from your mistakes.",
   "All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you. Swami Vivekananda",
 ];
 var index = Math.floor(Math.random() * quotes.length);
