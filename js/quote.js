@@ -6,6 +6,7 @@ var lang = "en-US";
 
 var quotes = [
   "Self-trust is the first secret of success",
+  "When you do things from your soul, you feel a river moving in you, a joy. - Rumi",
   "The beauty you see in me is a reflectin of you. ― Jalaluddin Rumi",
   "The best thing in life are mostly beyond your eyesight. They're most often felt from heart.",
   "A goal stood before Siddhartha, a single goal: to become empty, empty of thirst, empty of wishing, empty of dreams, empty of joy and sorrow. Dead to himself, not to be a self any more, to find tranquility with an emptied heart, to be open to miracles in unselfish thoughts, that was his goal.",
