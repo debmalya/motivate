@@ -388,6 +388,9 @@ var quotes = [
   "A problem is a chance for you to prove yourself and do your best.",
   "You are strong when you know your weaknesses. You are beautiful when you appreciate your flaws. You are wise when you learn from your mistakes.",
   "If you think you are too small to make a difference, try sleeping with mosquito. - Dalai Lama",
+  "Stop acting so small. You are the universe in ecstatic motion. - Rumi",
+  "The minute I heard my first love story,I started looking for you, not knowing how blind that was. Lovers don't finally meet somewhere. They're in each other all along. -Rumi",
+  "If you are irritated by every rub, how will your mirror be polished? - Rumi",
   "All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you. Swami Vivekananda",
 ];
 var index = Math.floor(Math.random() * quotes.length);
