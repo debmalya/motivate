@@ -5,8 +5,10 @@ var lang = "en-US";
 
 
 var quotes = [
+  "If you feel like losing everything. Remember that trees lose their leaves every year and they still stand tall and wait for better day to come",
   "Self-trust is the first secret of success",
   "When you do things from your soul, you feel a river moving in you, a joy. - Rumi",
+  "Be melting snow. Wash yourself of yourself. A white flower grows in the quietness. Let your tongue become that white flower - Rumi",
   "The beauty you see in me is a reflectin of you. ― Jalaluddin Rumi",
   "The best thing in life are mostly beyond your eyesight. They're most often felt from heart.",
   "A goal stood before Siddhartha, a single goal: to become empty, empty of thirst, empty of wishing, empty of dreams, empty of joy and sorrow. Dead to himself, not to be a self any more, to find tranquility with an emptied heart, to be open to miracles in unselfish thoughts, that was his goal.",
