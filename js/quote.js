@@ -5,6 +5,7 @@ var lang = "en-US";
 
 
 var quotes = [
+  "Be yourself; everyone else is already taken. - Oscar Wilde",
   "To him who is in fear everything rustles. - Sophocles",
   "If you feel like losing everything. Remember that trees lose their leaves every year and they still stand tall and wait for better day to come",
   "Self-trust is the first secret of success",
