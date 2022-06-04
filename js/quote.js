@@ -1,6 +1,6 @@
 var duration = 1000;
 var delay = 0;
-var no_of_images = 12;
+var no_of_images = 13;
 var lang = "en-US";
 
 
@@ -426,10 +426,8 @@ $(document).ready(function () {
         lang = "en-GB";
         if (index % 2 === 1) {
           u.name = "Google UK English Female";
-          console.log('Female UK voice');
         } else {
           u.name = "Google UK English Male";
-          console.log('Male UK voice');
         }
       } else {
         lang = "en-US";
