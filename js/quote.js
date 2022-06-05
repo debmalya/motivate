@@ -1,6 +1,6 @@
 var duration = 1000;
 var delay = 0;
-var no_of_images = 13;
+var no_of_images = 14;
 var lang = "en-US";
 
 
