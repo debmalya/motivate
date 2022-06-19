@@ -5,6 +5,7 @@ var lang = "en-US";
 
 
 var quotes = [
+  "Control your 'ANGER' because it is just one letter away from 'DANGER'.",
   "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go...― Dr. Seuss, Oh, the Places You'll Go!",
   "Be yourself; everyone else is already taken. - Oscar Wilde",
   "To him who is in fear everything rustles. - Sophocles",
