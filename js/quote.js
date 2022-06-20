@@ -398,6 +398,7 @@ var quotes = [
   "Stop acting so small. You are the universe in ecstatic motion. - Rumi",
   "The minute I heard my first love story,I started looking for you, not knowing how blind that was. Lovers don't finally meet somewhere. They're in each other all along. -Rumi",
   "If you are irritated by every rub, how will your mirror be polished? - Rumi",
+  "The second half of a man's life is made up of nothing but the habits he has acquired during the first half. - Fyodor Dostoyvoskey",
   "All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak; do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything, without even the guidance of any one. Stand up and express the divinity within you. Swami Vivekananda",
 ];
 var index = Math.floor(Math.random() * quotes.length);
